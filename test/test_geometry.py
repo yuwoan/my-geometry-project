@@ -9,6 +9,10 @@ class TestGeometry(unittest.TestCase):
     def test_rectangle_area(self):
         rectangle = Rectangle(4, 5)
         self.assertEqual(rectangle.area(), 20)
+        
+    def test_rectangle_perimeter(self):
+        rectangle = Rectangle(4, 5)
+        self.assertEqual(rectangle.perimeter(), 18)
 
 if __name__ == '__main__':
     unittest.main()
