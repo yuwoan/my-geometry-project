@@ -14,7 +14,6 @@ class Circle:
 
 class Rectangle:
     def __init__(self, width, height):
-<<<<<<< HEAD
         if not isinstance(width, (int, float)) or not isinstance(height, (int, float)):
             raise TypeError("宽和高必须是数字")
         if width <= 0 or height <= 0:
