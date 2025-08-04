@@ -10,10 +10,12 @@ class Circle:
         return math.pi * (self.radius ** 2)
     
     def perimeter(self):
-        return 2 * meth.pi * self.radius
+        return 2 * math.pi * self.radius
 
 class Rectangle:
     def __init__(self, width, height):
+        if not isinstance(width, (int, float)) or not isinstance(height, (int, float)):
+            raise TypeError("宽和高必须是数字")
         self.width = width
         self.height = height
 
